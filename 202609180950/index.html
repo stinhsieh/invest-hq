@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>投資闖關課總部</title>
+<meta name="description" content="投資闖關課系列的狀態總覽：合併版進度、每日自動更新、財經電子報訂閱、待辦事項。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* 這一頁是狀態儀表板，不是分章手冊：補幾個本頁專用的小樣式，沿用共用色票 */
+  .srow{display:grid;grid-template-columns:1fr;gap:3px;padding:12px 0;border-top:1px solid var(--line)}
+  .srow:first-child{border-top:0}
+  @media(min-width:700px){.srow{grid-template-columns:7.5rem 1fr auto;gap:4px 16px;align-items:baseline}}
+  .srow .k{font-weight:700;font-size:15px}
+  .srow .v small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+  .pill{display:inline-flex;align-items:center;gap:.4em;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap;justify-self:start}
+  .pill::before{content:"";width:.5em;height:.5em;border-radius:50%;background:currentColor}
+  .pill.ok{color:#15803d;background:#dcfce7}
+  .pill.warn{color:#9a5b06;background:#fef3c7}
+  .pill.wait{color:var(--hero-bg);background:color-mix(in srgb,var(--hero-bg) 12%,var(--card))}
+  .pill.plain{color:var(--muted);background:var(--bg)}
+  .pill.plain::before{display:none}
+  .arow{display:grid;grid-template-columns:3.4rem 1fr auto;align-items:baseline;gap:8px 12px;padding:9px 0;border-top:1px solid var(--line)}
+  .arow:first-child{border-top:0}
+  .arow .an{font-size:12px;font-weight:800;color:var(--muted);letter-spacing:.04em}
+  .arow .at{font-size:14.5px;color:var(--ink)}
+  .arow .at small{display:block;font-size:12.5px;color:var(--muted);margin-top:1px}
+  .arow .au{font-size:13.5px;font-weight:700;color:var(--hero-bg);white-space:nowrap;text-decoration:none}
+  .arow .au:hover{text-decoration:underline}
+  @media(max-width:520px){.arow{grid-template-columns:1fr auto;grid-template-areas:"n u" "t t"}.arow .an{grid-area:n}.arow .au{grid-area:u}.arow .at{grid-area:t}}
+  .hero.pagehero{padding:38px 0 30px}
+  .hero.pagehero h1{font-size:clamp(26px,5vw,38px)}
+  .snap{font-size:13px;opacity:.85;margin-top:10px}
+  /* 出處表第一欄是關卡號：共用樣式的 overflow-wrap:anywhere 會把 10、11 拆成一字一行 */
+  .src-tbl td:first-child,.src-tbl th:first-child{white-space:nowrap;text-align:center}
+</style>
+</head>
+<body data-todo-prefix="invest-hq-todo-">
+
+<header class="hero pagehero">
+  <span class="wm">總</span>
+  <div class="wrap">
+    <span class="tag">私人頁面・只有知道網址的人看得到</span>
+    <h1>投資闖關課總部</h1>
+    <p class="sub">三門課已經合併成一頁 38 關的「投資財務學習」，一個網址、一條進度條，每天收盤後自動更新；課程資料到 9/17 收盤。聯準會 9/16 升息到 3.75%～4.00%、台灣央行 9/17 決議維持 2% 不動，兩邊都已對過官方來源、帶進課程。</p>
+    <p class="snap">快照時間 2026-09-18 09:50</p>
+  </div>
+</header>
+
+<section id="main">
+  <div class="wrap">
+
+    <h2>主要入口</h2>
+    <p class="lead">從 9/16 起用合併版就好；三門分開的舊網址收在下面，僅供備查。</p>
+
+    <div class="box big">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px">
+        <span class="badge">合併版・主要入口</span>
+        <span style="color:#15803d;font-size:13px;font-weight:700">● 上線中・每天更新</span>
+      </div>
+      <h3 style="margin-top:2px">投資財務學習</h3>
+      <p style="color:var(--muted);font-size:14px;margin:2px 0 10px">38 關・約 250 分鐘・私人網址第 6 版（09-18）</p>
+      <p>第 0～11 關先顧好自己的錢 → 第 12～25 關看懂公司 → 第 26～37 關看懂大環境。一條進度條、一本 125 詞的字典、錯題複習跨三段。</p>
+      <div class="cta" style="margin-top:14px">
+        <a class="btn btn-fill" href="https://claude.ai/artifact/R5hioDsKVNgETPftsJHDvV" target="_blank" rel="noopener">開私人網址 →</a>
+      </div>
+      <p style="font-size:13px;color:var(--muted);margin-top:12px">私人網址只有你看得到；網頁本身每天收盤後自動重組，但網址上的版本要在對話裡說「更新合併版網址」才會換。家人網站沒有合併版（維持兩門）。</p>
+    </div>
+
+    <div class="abc">
+      <div class="c">
+        <b>家人網站首頁</b>
+        <p style="font-size:14px;color:var(--muted);margin:4px 0">公開・不被搜尋收錄</p>
+        <p style="font-size:13.5px"><a href="https://stinhsieh.github.io/invest-quest/" target="_blank" rel="noopener">stinhsieh.github.io/invest-quest/</a></p>
+        <p style="font-size:14px">傳給家人的就是這個網址。iPhone 家人一律用網址，不要傳檔案。</p>
+      </div>
+      <div class="c">
+        <b>投資地圖手冊</b>
+        <p style="font-size:14px;color:var(--muted);margin:4px 0">公開・不被搜尋收錄</p>
+        <p style="font-size:13.5px"><a href="https://stinhsieh.github.io/investmap/" target="_blank" rel="noopener">stinhsieh.github.io/investmap/</a></p>
+        <p style="font-size:14px">三門課的教材來源：教授課程整理成的三單元手冊。</p>
+      </div>
+    </div>
+
+    <div class="box" style="margin-top:6px">
+      <p style="font-size:13px;font-weight:700;color:var(--muted);margin:0 0 6px">舊版本（已併入合併版，僅供備查）・3 個</p>
+      <div class="arow">
+        <span class="an">第 1 門</span>
+        <span class="at">投資入門闖關課<small>12 關・私人網址第 3 版</small></span>
+        <a class="au" href="https://claude.ai/artifact/FuH8c8zLMKaxhnwhoqgCEv" target="_blank" rel="noopener">開網址</a>
+      </div>
+      <div class="arow">
+        <span class="an">第 2 門</span>
+        <span class="at">台灣 AI 供應鏈闖關課<small>14 關・私人網址第 5 版・每天更新</small></span>
+        <a class="au" href="https://claude.ai/artifact/REQgS7DTgXQ9YwXvuSJ9bq" target="_blank" rel="noopener">開網址</a>
+      </div>
+      <div class="arow">
+        <span class="an">第 3 門</span>
+        <span class="at">總體經濟闖關課<small>12 關・私人網址第 2 版・已併入合併版第 26～37 關</small></span>
+        <a class="au" href="https://claude.ai/artifact/QC78cYbFp8rtuRPmBhNSoE" target="_blank" rel="noopener">開網址</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>財經電子報／訂閱資源</h2>
+    <p class="lead">天下電子報其實從 9 月初就一直在收（每日報、經濟學人、管理 Insight、胡說科技…），現在每天早上自動摘要進投資理財庫；付費全閱讀已訂閱但鎖在登入牆後，我進不去。</p>
+
+    <div class="abc">
+      <div class="c">
+        <b>六家財經媒體比價表</b>
+        <p style="font-size:14px;color:var(--muted);margin:4px 0">私人・分析報告</p>
+        <p style="font-size:13.5px"><a href="https://claude.ai/artifact/9T8EEGuk47riiahEYBkfuL" target="_blank" rel="noopener">claude.ai/artifact/9T8EE...</a></p>
+        <p style="font-size:14px">工商、今周、商周、天下、Smart、Money 錢的訂閱費用與組合方案比較。</p>
+      </div>
+      <div class="c">
+        <b>天下電子報訂閱管理</b>
+        <p style="font-size:14px;color:#15803d;font-weight:700;margin:4px 0">已訂閱・12 種</p>
+        <p style="font-size:13.5px"><a href="https://www.cw.com.tw/newsletter" target="_blank" rel="noopener">cw.com.tw/newsletter</a></p>
+        <p style="font-size:14px">天下每日報、經濟學人電子報、管理 Insight 等，登入會員中心可管理訂閱。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>每天自動更新</h2>
+    <p class="lead">收盤後由這台電腦的排程自動跑，不用你動手。</p>
+    <div class="box" style="padding:4px 20px">
+      <div class="srow">
+        <span class="k">課程資料</span>
+        <span class="v">更新到 <b>2026/09/17</b> 收盤<small>組好時間 09-17 19:40・名單 150 家・待分類新公司 0 家</small></span>
+        <span class="pill ok">正常</span>
+      </div>
+      <div class="srow">
+        <span class="k">合併版</span>
+        <span class="v">09-18 01:20 重組：修好入門課 5 個工具、換上央行 9/17 決議，<b>私人網址第 6 版</b><small>字典 125 詞、38 關、14 個工具；組完自動檢查「沒有漏換的數字」＋「每個輸入欄位都有接上程式」，不過就不輸出</small></span>
+        <span class="pill ok">正常</span>
+      </div>
+      <div class="srow">
+        <span class="k">下一次排程</span>
+        <span class="v"><b>今天 9/18（五）15:40</b>，抓 9/18 收盤<small>每天 15:40・19:40・08:40 各試一次，同一個交易日只做一次</small></span>
+        <span class="pill wait">等待中</span>
+      </div>
+      <div class="srow">
+        <span class="k">投資理財庫</span>
+        <span class="v">每天 <b>08:38</b> 排程讀天下電子報、摘要歸檔<small>09-18 改走新路：iCloud 轉寄始終沒生效，改用一支固定程式從這台 Mac 的「郵件」App 讀 iCloud 收件匣（唯讀、只收 6 種投資相關電子報、不碰其他信）。09-18 09:42 首跑成功：2 封信、11 則摘要，權限已核准，之後每天無人值守</small></span>
+        <span class="pill ok">正常</span>
+      </div>
+      <div class="srow">
+        <span class="k">家人網站</span>
+        <span class="v">最後推送 <b>09-17 19:40</b>（9/17 收盤）<small>連兩天無人值守自動推送成功；家人版維持入門＋AI 兩門，不放合併版。家人版入門課的 5 個工具已確認正常（出問題的只有合併版）</small></span>
+        <span class="pill ok">正常</span>
+      </div>
+      <div class="srow">
+        <span class="k">私人網址</span>
+        <span class="v">合併版第 6 版（09-18）・AI 課第 5 版・入門課第 3 版・總經課第 2 版<small>都不會自動更新；合併版說「更新合併版網址」，單門課說「更新課程網址」</small></span>
+        <span class="pill plain">手動</span>
+      </div>
+      <div class="srow">
+        <span class="k">季財報</span>
+        <span class="v"><b>2026 第 2 季</b>已抓<small>每一季申報期限前 20 天開始自動抓</small></span>
+        <span class="pill ok">正常</span>
+      </div>
+      <div class="srow">
+        <span class="k">自動煞車</span>
+        <span class="v">5 個停止條件都沒有觸發<small>例如台積電不是市值第一、00952 放進台積電、名單不足 150 家——出現就不產生新網頁</small></span>
+        <span class="pill ok">沒觸發</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>第 3 門：總體經濟闖關課教材出處</h2>
+    <p class="lead">計劃書 100_Todo/plans/202609151753_第3門課錢會變薄_計劃書.md</p>
+
+    <h3>官方數字（2026-09-18 更新）</h3>
+    <div class="formula">
+      這門課的主角：實質利率　1.69% − 2.04% ＝ <span class="hl">−0.35%</span>
+    </div>
+    <p>臺銀一年期定存 1.69%，減掉 8 月物價上漲率 2.04%。1 萬元存一年變成 10,169 元，但能買的東西只剩現在的 9,966 元左右——錢真的變薄了。講課時是 −0.6%，現在一樣是負的。</p>
+
+    <div class="tablewrap">
+      <table>
+        <tr class="thr"><th>項目</th><th>數值</th><th>資料日期</th><th>來源</th></tr>
+        <tr><td data-label="項目">重貼現率</td><td data-label="數值">年息 2%</td><td data-label="資料日期">2024-03-22 起；2026-09-17 決議維持</td><td data-label="來源">中央銀行</td></tr>
+        <tr><td data-label="項目">物價上漲率（CPI 年增率）</td><td data-label="數值">2.04%（核心 2.30%）</td><td data-label="資料日期">2026 年 8 月</td><td data-label="來源">主計總處</td></tr>
+        <tr><td data-label="項目">物價上漲率（2025 全年）</td><td data-label="數值">1.66%</td><td data-label="資料日期">2025 年平均</td><td data-label="來源">主計總處</td></tr>
+        <tr><td data-label="項目">臺銀一年期定存</td><td data-label="數值">機動 1.690%／固定 1.700%</td><td data-label="資料日期">2026-09-15 牌告</td><td data-label="來源">臺灣銀行</td></tr>
+        <tr><td data-label="項目">10 年期公債殖利率</td><td data-label="數值">約 1.9%</td><td data-label="資料日期">2026-09-15</td><td data-label="來源">櫃買中心</td></tr>
+        <tr><td data-label="項目">新台幣對美元</td><td data-label="數值">31.848</td><td data-label="資料日期">2026-09-15 收盤</td><td data-label="來源">中央銀行</td></tr>
+        <tr><td data-label="項目">美國聯準會利率</td><td data-label="數值">3.75%～4.00%</td><td data-label="資料日期">2026-09-16 決議升息 1 碼</td><td data-label="來源">聯準會</td></tr>
+        <tr><td data-label="項目">臺銀黃金存摺</td><td data-label="數值">4,400 元／公克（賣出）</td><td data-label="資料日期">2026-09-15 盤後</td><td data-label="來源">臺灣銀行</td></tr>
+      </table>
+    </div>
+    <div class="box">
+      <b>已對過官方來源：</b>央行 9/17 理監事會決議，重貼現率、擔保放款融通利率、短期融通利率分別維持年息 2%、2.375%、4.25%（官網新聞稿逐字核對）；央行同時預測 2026 年 CPI 年增率 2.03%、2027 年 1.83%。利率沒動，所以實質利率仍是 −0.35%，總經段「越存越薄」的說法不用改。另外央行這次把自然人第 2 戶購屋貸款成數上限由 6 成調到 7 成（9/18 起）——課程沒有寫到這個數字，不受影響。下一次理監事會約 12 月中。
+    </div>
+
+    <h3 style="margin-top:30px">12 關教材出處對照</h3>
+    <div class="tablewrap">
+      <table class="src-tbl">
+        <tr class="thr"><th>關</th><th>主題</th><th>出處</th><th>計算機</th></tr>
+        <tr><td data-label="關">0</td><td data-label="主題">總體經濟環境與 K 型分化</td><td data-label="出處">單元 2「QE 之後，誰得利？」；總經趨勢手冊第 1 段</td><td data-label="計算機"></td></tr>
+        <tr><td data-label="關">1</td><td data-label="主題">通貨膨脹的本質與衡量</td><td data-label="出處">單元 2「今天的一塊 ≠ 未來的一塊」「通膨的本質」</td><td data-label="計算機">購買力試算</td></tr>
+        <tr><td data-label="關">2</td><td data-label="主題">名目利率與實質利率</td><td data-label="出處">單元 2「名目利率 vs 實質利率」「有效年利率」</td><td data-label="計算機">實質利率試算</td></tr>
+        <tr><td data-label="關">3</td><td data-label="主題">中央銀行的職能與利率政策</td><td data-label="出處">單元 2「CPI 與 PCE」；單元 3；中央銀行法第 2 條</td><td data-label="計算機"></td></tr>
+        <tr><td data-label="關">4</td><td data-label="主題">量化寬鬆與資產價格效應</td><td data-label="出處">單元 2「QE 之後，誰得利？」</td><td data-label="計算機"></td></tr>
+        <tr><td data-label="關">5</td><td data-label="主題">利率變動與債券價格</td><td data-label="出處">單元 1「債券的三種發行人」；單元 2</td><td data-label="計算機">債券價格試算</td></tr>
+        <tr><td data-label="關">6</td><td data-label="主題">求償順位與報酬結構：股票與債券</td><td data-label="出處">單元 1「求償順位」「債券像什麼、股票像什麼」</td><td data-label="計算機"></td></tr>
+        <tr><td data-label="關">7</td><td data-label="主題">利率與股票評價：本益比、公債與 72 法則</td><td data-label="出處">總經趨勢手冊；單元 2「巴菲特與 72 法則」</td><td data-label="計算機">72 法則試算</td></tr>
+        <tr><td data-label="關">8</td><td data-label="主題">匯率風險：海外投資的隱藏成本</td><td data-label="出處">單元 2「海外 ETF 的匯率陷阱」</td><td data-label="計算機"></td></tr>
+        <tr><td data-label="關">9</td><td data-label="主題">黃金、美元與去美元化</td><td data-label="出處">單元 2「去美元化與黃金」；美國財政部 TIC</td><td data-label="計算機"></td></tr>
+        <tr><td data-label="關">10</td><td data-label="主題">不動產：槓桿、人口結構與不同觀點</td><td data-label="出處">單元 2「房地產」「人口結構」</td><td data-label="計算機"></td></tr>
+        <tr><td data-label="關">11</td><td data-label="主題">台灣總體經濟現況與新聞判讀</td><td data-label="出處">單元 3「台灣經濟的即時體檢」；央行決議；主計總處 8 月物價</td><td data-label="計算機"></td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>待辦</h2>
+    <p class="lead"><span class="prog" id="prog">0 / 0</span>　勾了會記住進度</p>
+
+    <h3>你要做或決定的</h3>
+    <div class="todo"><input type="checkbox" data-k="try-merged"><span>請你試玩合併版 38 關，順不順、三段銜接處看得懂嗎——用順了再決定三個舊網址要不要收（收也只是停止更新，不必刪）</span></div>
+    <div class="todo"><input type="checkbox" data-k="mthin-doc"><span>第 3 門：到 DB「最近 7 天的紀錄」找總經趨勢手冊——網址 dongbook-transcript-tool.onrender.com/convert；只保留 7 天，大約 9/21 前</span></div>
+    <div class="todo"><input type="checkbox" data-k="finder-cleanup"><span>在 Finder 刪 6 個舊版 AI 課網頁：…1016、1056、1809、1841、1856、1915</span></div>
+    <div class="todo"><input type="checkbox" data-k="ios-sim"><span>要不要移除 iOS 模擬器映像——大約 8.5GB，在 Xcode 設定裡移除；以後要測 iPhone 就得重裝</span></div>
+    <div class="todo"><input type="checkbox" data-k="old-hq-artifact"><span>舊的 Claude 私人頁版總部、還有「投資網址總入口」那一頁，要不要收掉——現在以這一頁為準，那兩頁不再更新</span></div>
+    <div class="todo"><input type="checkbox" data-k="dongbook-38"><span>38 關本體要不要也搬到 DongBook——測驗、計算機、字典、錯題複習 DongBook 都沒有，要重做；另開一個 session 先做架構設計</span></div>
+    <div class="todo"><input type="checkbox" data-k="ctee-sub"><span>工商時報要不要一起訂閱——之前判斷先不用，日報內容跟免費 RSS 重疊約七成</span></div>
+
+    <h3 style="margin-top:26px">我要做的</h3>
+    <div class="todo"><input type="checkbox" data-k="cbc-dec"><span>12 月中央行下一次理監事會後，再對一次重貼現率與臺銀定存利率——實質利率若轉正，總經段「越存越薄」那幾句要重寫</span></div>
+    <div class="todo"><input type="checkbox" data-k="push-merged"><span>把當天數字推上合併版私人網址——說「更新合併版網址」即可；網頁本身每天已自動重組</span></div>
+    <div class="todo"><input type="checkbox" data-k="roe-2027"><span>2027/3 底：AI 課第 10 關五年 ROE 用年報更新——年報數字一年一次，排程不會自動抓</span></div>
+
+    <h3 style="margin-top:26px">9/18 做完</h3>
+    <ul>
+      <li>天下電子報改從這台 Mac 的「郵件」App 直接讀（你選的第 ③ 條路）：寫了一支固定程式，只讀 iCloud 收件匣、只收 6 種投資相關的天下電子報、唯讀不動信件、內文網址全拿掉；排程首跑成功，投資理財庫累積 18 則。順便發現你從 9 月初就一直在收這些電子報，信箱裡有兩週存量還沒摘要。</li>
+      <li>你回報「開戶前體檢輸入沒反應」→ 查出三門課合併時，入門課的 5 個工具（開戶前體檢、下跌體感模擬器、風險承受度自測、費用侵蝕、複利計算機）只搬了畫面、漏搬程式，上線兩天都是壞的。已修好，合併版更新到第 6 版。</li>
+      <li>全面複檢：14 個工具每個都實際改輸入確認輸出會變、38 關測驗逐關全對能通過、6 張圖表、公司清單搜尋、判斷練習、字典彈窗，4 種螢幕寬度 × 淺深色共 8 種條件，失敗 0 項。家人網站與單獨的入門課不受影響。</li>
+      <li>加兩道防再犯：組裝時只要有輸入欄位沒接上程式就不輸出（每天排程也會過這關）；測試從「抽查」改成「掃全部」，並先在壞掉的舊版上確認它真的會報錯。</li>
+      <li>央行 9/17 決議對過官網原文：維持 2% 不動；第 37 關引用的央行說法從 6/18 那次換成 9/17 這次的原話。</li>
+    </ul>
+
+    <h3 style="margin-top:26px">9/17 做完</h3>
+    <ul>
+      <li>投資入口頁確認已上線；聯準會升息數字已重抓並更新到合併版（第 4 版），改名為「投資財務學習」。</li>
+      <li>建立投資理財庫＋每日排程：天下 12 種免費電子報已訂閱（iCloud 轉寄到 Gmail），每天 08:38 自動摘要歸檔。</li>
+      <li>這個總部頁面改用 DongBook 製作、部署到 GitHub Pages，取代原本的 Claude Artifact 版本（Artifact 沙盒環境的折疊互動點不動，改用不需要點擊的次要化列表）。</li>
+    </ul>
+  </div>
+</section>
+
+<footer>投資闖關課系列・內部工作頁　·　內容最後更新：2026/09/18 09:50</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
